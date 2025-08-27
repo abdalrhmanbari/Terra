@@ -1,4 +1,3 @@
-import React from 'react'
 import footer from  "../assets/footer.png"
 import logo from "../assets/logo2.png"
 export default function Footer() {

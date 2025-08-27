@@ -1,4 +1,3 @@
-import React from "react";
 import identification from "../assets/Identification.jpg";
 import CardWithDecoration from "./CardWithDecoration";
 import group from "../assets/group.png";

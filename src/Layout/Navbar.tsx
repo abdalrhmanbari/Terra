@@ -1,4 +1,3 @@
-import React from 'react'
 import Logo from "../assets/logo.png"
 import Button from '../components/Button'
 export default function Navbar() {
