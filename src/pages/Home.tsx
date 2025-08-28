@@ -59,7 +59,7 @@ export default function Home() {
 
       <Identification isActiveImage={true} />
       <div className="sm:px-16 px-4 sm:mt-22 mt-16 space-y-6">
-        <h1 className=" text-2xl ">Our Core Services</h1>
+        <h1 className=" text-2xl text-[#031556] ">Our Core Services</h1>
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 m-auto justify-items-center">
           <Card
             img={`${Icon}`}
@@ -96,10 +96,10 @@ export default function Home() {
       <div className=" px-4 sm:px-16 mt-16 text-center space-y-6 text-[#031556]">
         <h1 className=" text-2xl ">Where We Operate</h1>
         <img alt="map" src={Map} className=" object-contain w-full h-auto " />
-        <h2 className=" text-2xl  mt-12">Trusted by Leading Developers</h2>
-        <p>we’ve supported high-impact projects for some of the region’s most respected developers
+        <h2 className=" text-base sm:text-2xl  mt-12">Trusted by Leading Developers</h2>
+        <p className=" text-sm sm:text-base">we’ve supported high-impact projects for some of the region’s most respected developers
 and consultancies.</p>
-<div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mt-12">
+<div className=" grid grid-cols-2 lg:grid-cols-4 justify-items-center mt-12">
 
     <div className="flex items-center flex-col gap-2 ">
       <img alt="." src={Icon} className=" sm:max-w-[4rem]  max-w-[3rem]"/>
