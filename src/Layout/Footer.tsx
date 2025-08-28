@@ -3,7 +3,7 @@ import footer from  "../assets/footer.png"
 import Logo from "../assets/logo2.png"
 export default function Footer() {
   return (
-    <div className=" border-none overflow-hidden    ">
+    <div className=" border-none overflow-hidden  ">
       <div className=" border-none  bg-[#DB9FCE] w-fit text-white rounded-l-2xl p-2 right-2 ms-auto">
         <Facebook/>
         <Instagram/>

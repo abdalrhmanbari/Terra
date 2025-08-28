@@ -5,7 +5,7 @@ import { Mail, MapIcon, MapPin, Phone } from 'lucide-react'
 import Button from '../components/Button'
 export default function Contact() {
   return (
-    <div className=' px-16 py-8 text-[#FFFFFF] bg-[#031556] w-full h-[80vh] mb-96'>
+    <div className=' sm:px-16 px-4  text-[#FFFFFF] bg-[#031556] w-full h-[80vh] mb-[500px]'>
               <Navbar/>
         <div className='text-center mt-20  space-y-2'>
         <h1 className=' text-2xl'>Contact Us</h1>
@@ -15,7 +15,7 @@ From strategy to site, Terra is your trusted partner in delivering high-impact p
           </p>
 Get in touch to schedule a consultation or request a proposal.</p>
         </div>
-        <div className=' bg-[#FFFFFF] flex  justify-center max-w-5xl m-auto mt-12 p-1 rounded-2xl shadow-2xl'>
+        <div className=' bg-[#FFFFFF] flex  sm:flex-row flex-col-reverse justify-center max-w-5xl m-auto mt-12 p-1 rounded-2xl shadow-2xl'>
           <div className=' rounded-md  max-w-sm me-auto'>
             <ul className=' bg-[#031556] text-[11px] space-y-2 rounded-t-2xl px-2 py-4'>
               <li>Direct Contact</li>
@@ -26,9 +26,13 @@ Get in touch to schedule a consultation or request a proposal.</p>
             </ul>
             <img alt='Map' src={Map} className=' border border-[#031556] rounded-b-2xl'/>
           </div>
-          <div className=' grid grid-cols-1 justify-items-center '>
-            <div className=' grid sm:grid-cols-2 grid-cols-1  justify-items-center gap-10'>
-<input
+          <div className=' p-8 sm:w-1/2 m-auto space-y-8 flex flex-col '> 
+
+<div className=" flex flex-col gap-10 items-center justify-center">
+
+  <div className=' flex flex-col sm:flex-row gap-10 w-full '>
+
+  <input
   type="text"
   placeholder="First Name"
   className="w-full text-gray-800 border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:ring-0 outline-none"
@@ -39,6 +43,9 @@ Get in touch to schedule a consultation or request a proposal.</p>
   placeholder="Last Name"
   className="w-full text-gray-800  border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:ring-0 outline-none"
 />
+  </div>
+  <div className=' flex flex-col sm:flex-row gap-10 w-full'>
+
 
    <input
   type="text"
@@ -49,19 +56,22 @@ Get in touch to schedule a consultation or request a proposal.</p>
       <input
   type="text"
   placeholder="Company"
-  className="w-full text-gray-800  border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:ring-0 outline-none"
+  className="w-full  text-gray-800  border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:ring-0 outline-none"
 />
+  </div>
 
               
          <input
   type="text"
   placeholder="Message"
-  className="w-full text-gray-800    border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:ring-0 outline-none"
+  className="w-full text-gray-800    border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:ring-0 outline-none flex "
 />
 
             </div>
-      <Button btn='Send Message'  style='bg-[#8D0060] right-0 bottom-0 w-fit h-fit '/>
-            </div>
+    <div className='  m-auto'>
+      <Button btn='Send Message'  style='bg-[#8D0060]  '/>
+    </div>
+  </div>
           </div>  
     </div>
   )

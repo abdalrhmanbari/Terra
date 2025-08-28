@@ -15,16 +15,16 @@ export default function About() {
       const [activeTab, setActiveTab] = useState<"vision" | "mission">("vision");
 
   return (
-    <div className=' px-16 py-8 text-[#031556]'>
+    <div className=' px-4 sm:px-16  text-[#031556]'>
         <Navbar color='text-[#031556]'/>
         <div className=' mt-20'>
-            <div className=' flex items-center justify-between '>
+            <div className=' flex flex-col sm:flex-row items-center justify-between  gap-10'>
 
                 <div>
                     <h1 className=' text-2xl'>About Terra</h1>
-                    <p className='  max-w-[30rem]'>Terra is a regional project management consultancy transforming how complex projects are designed, managed, and delivered. Known for our precision and integrity, we e.</p>
+                    <p className='  sm:max-w-[30rem]'>Terra is a regional project management consultancy transforming how complex projects are designed, managed, and delivered. Known for our precision and integrity, we e.</p>
                 </div>
-                                <div className=' max-w-1/2'>
+                                <div className=' sm:max-w-1/2 '>
                         <img alt='About Terra' src={GroupAbout1} className=' object-contain'/>
                 </div>
             </div>
@@ -63,19 +63,19 @@ export default function About() {
   <img 
     alt='group' 
     src={Group} 
-    className='absolute top-2 left-2 rotate-180' 
+    className='absolute top-2 left-2 rotate-180 sm:w-20 w-10 ' 
   />
   <img 
     alt='group' 
     src={Group} 
-    className='absolute bottom-2 right-2' 
+    className='absolute bottom-2 right-2 sm:w-20 w-10' 
   />
-        <p className='  flex justify-center items-center m-auto text-center  w-[40rem] '>To build a future-driven design and project management consultancy firm known for precision, innovation, and execution excellence.</p>
+        <p className='  flex justify-center items-center m-auto text-center  sm:w-[40rem]  text-sm sm:text-base'>To build a future-driven design and project management consultancy firm known for precision, innovation, and execution excellence.</p>
 </div>
 <Identification isActive={true} style='flex-row-reverse'/>
 <div className=' mt-12 space-y-8'>
     <h1 className='  text-2xl'>Our Core Services</h1>
-    <div className=' grid grid-cols-2 gap-4'>
+    <div className=' grid  grid-cols-1 sm:grid-cols-2 gap-4'>
     <CardAbout title='Project & Program Management' src={Time} option="Transparent cost forecasting, budgeting, and value engineering services"/>
     <CardAbout title='Project & Program Management' src={Time} option="Transparent cost forecasting, budgeting, and value engineering services"/>
     <CardAbout title='Project & Program Management' src={Time} option="Transparent cost forecasting, budgeting, and value engineering services"/>
@@ -86,7 +86,7 @@ export default function About() {
 </div>
 <div className=' mt-12 space-y-10   '>
 <h1 className=' text-center text-2xl'>Industries We Serve</h1>
-<div className='  grid grid-cols-3 gap-10  justify-items-center'>
+<div className='  grid grid-cols-1 sm:grid-cols-3 gap-10  justify-items-center'>
           <CardWithDecoration title="Regional Delivery Excellence"  isColor style="  ps-3" styleColor='bg-[#031556]' />
           <CardWithDecoration title="Regional Delivery Excellence"  isColor style=" ps-3"  styleColor='bg-[#DB9FCE]' />
           <CardWithDecoration title="Regional Delivery Excellence"  isColor style=" ps-3" styleColor=' bg-[#8D0060]' />
@@ -98,7 +98,7 @@ export default function About() {
 <div className=' mt-16 space-y-2'>
     <h1 className=' text-2xl'>Operating Territories</h1>
     <p>We work across the Middle East and North Africa, with active operations in:</p>
-    <div className=' flex gap-10 mt-10'>
+    <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 justify-items-center'>
     <Country description='United Arab Emirates' src={Emirates}/>
     <Country description='Egypt' src={Egypt}/>
     <Country description='Saudi Arabia' src={Saudi}/>

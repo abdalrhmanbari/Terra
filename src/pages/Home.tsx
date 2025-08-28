@@ -10,9 +10,9 @@ import Map from "../assets/Map.jpg";
 import GroupLeft from "../assets/groupLeft.png";
 export default function Home() {
   return (
- <div className="w-full overflow-x-hidden">
+ <div className=" mx-auto overflow-x-hidden">
 <div
-  className="sm:min-h-screen flex flex-col px-4 sm:px-16 py-8 text-[#031556] overflow-hidden relative"
+  className="sm:min-h-screen flex flex-col px-4 sm:px-16 py-8 text-[#031556]   relative mx-auto "
   style={{
     backgroundImage: `url(${Banner})`,
     backgroundSize: "cover",
@@ -22,7 +22,7 @@ export default function Home() {
 >
         <Navbar />
         <div className=" sm:flex  justify-between mt-8">
-          <div className=" sm:w-1/2  space-y-4 flex flex-col justify-start mt-8 ">
+          <div className=" sm:w-1/2  space-y-4 flex flex-col justify-start sm:mt-8 ">
             <h1 className=" sm:text-6xl text-xl text-white font-bold">
               Building with Precision. Managing with Purpose
             </h1>
@@ -38,11 +38,11 @@ export default function Home() {
               <Button btn="Get in Touch" style=" border border-[#8D0060] text-sm sm:text-base " color=" text-[#031556] sm:text-white" />
             </div>
           </div>
-          <div className="">
+          <div className="sr-only sm:not-sr-only">
             <img
               alt="computer"
               src={Computer}
-              className="object-contain w-full h-auto sr-only sm:not-sr-only"
+              className="object-contain w-full h-auto"
             />
           </div>
         </div>

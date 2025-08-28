@@ -8,7 +8,7 @@ import Contact from './pages/contact'
 function App() {
 
   return (
-    <div>
+    <div className=' overflow-x-hidden'>
       {/* <Home/> */}
     <Routes>
       <Route path='/' element={<Home/>}/>
